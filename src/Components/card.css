@@ -1,0 +1,99 @@
+.card {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.card-container {
+  margin-top: 2.5rem;
+  height: 15rem;
+  width: 80vw;
+  /* padding-bottom: 1.5rem; */
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  overflow: hidden;
+}
+.heightchange {
+  height: 10rem;
+}
+.card-left {
+  display: flex;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+}
+.card-right {
+  display: flex;
+  height: 100%;
+  width: 75%;
+}
+.animation-left {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(136, 109, 69, 0.9);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+.animation-left p {
+  margin: 0.5rem;
+  font-size: 14px;
+}
+.animation-right {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.animation-right p {
+  margin-top: 2rem;
+  font-size: 16px;
+  color: rgb(72, 71, 71);
+}
+.card-heading {
+  font-size: 25px;
+  font-weight: 200;
+  margin-top: 1.5rem;
+  color: rgb(72, 71, 71);
+}
+.card-sub-head {
+  font-weight: 600;
+  margin-top: 1rem;
+  color: rgb(72, 71, 71);
+}
+
+.degree {
+  font-size: 25px;
+  margin: 0.5rem;
+}
+
+@media only screen and (max-width: 1130px) {
+  .card-container {
+    flex-direction: column;
+    height: max-content;
+  }
+  .card-left {
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    background-color: white;
+  }
+  .card-right {
+    display: flex;
+    height: 100%;
+    width: 95%;
+    padding-bottom: 2rem;
+  }
+  .animation-right {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card-left {
+    height: 6rem;
+  }
+}

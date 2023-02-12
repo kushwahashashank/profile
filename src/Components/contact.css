@@ -1,0 +1,123 @@
+.btn-round-corner {
+  /* margin: 0 8px 0 8px; */
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-btn-icon {
+  font-size: 1.2rem;
+  color: rgb(136, 109, 69);
+}
+.whatsapp:hover {
+  color: rgb(101, 216, 68);
+}
+.insta:hover {
+  color: rgb(187, 55, 135);
+}
+.contact {
+  display: flex;
+  width: 100vw;
+  height: 40rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.contact-header-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40rem;
+  z-index: -1;
+}
+
+.contact__container {
+  display: flex;
+  height: max-content;
+  padding: 3rem 10rem 5rem 10rem;
+
+  width: 25%;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-head {
+  font-size: 25px;
+  font-weight: 900;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input {
+  width: 90%;
+  height: 2.2rem;
+  margin: 0.5rem;
+  border-radius: 2rem;
+  border: 1px solid grey;
+  outline: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: rgb(136, 109, 69);
+  margin-top: 1rem;
+}
+.contact-form textarea {
+  width: 90%;
+  height: 8rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid grey;
+  outline: none;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: rgb(136, 109, 69);
+}
+.btn-submit {
+  height: 2rem;
+  width: 5rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(136, 109, 69);
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+/* .btn-submit :hover{
+    cursor: pointer;
+} */
+
+.last-name {
+  display: flex;
+  height: 3rem;
+  width: 100vw;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  color: rgb(136, 109, 69);
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact__container {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .contact__container {
+    padding: 2rem 2rem 3rem 2rem;
+    width: 70%;
+  }
+}
