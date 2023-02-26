@@ -432,7 +432,7 @@ function Home() {
             id="insta"
             className="  btn-round-corner  "
             href="https://instagram.com/_kushwaha_shashank_"
-            data-tooltip-content="My Github Profile"
+            data-tooltip-content="Follow me on Instagram"
             rel="noreferrer"
             target="_blank"
           >
@@ -455,7 +455,7 @@ function Home() {
           <a
             id="what"
             className="btn-round-corner"
-            data-tooltip-content="My Competitive Programming profiles"
+            data-tooltip-content="Send me a message !"
             href="https://wa.me/+918081637834"
             rel="noreferrer"
             target="_blank"

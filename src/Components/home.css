@@ -187,6 +187,7 @@
   }
   .about_head {
     font-size: 14px;
+    width: max-content;
   }
   .btn-round {
     margin: 0 5px 0 5px;
