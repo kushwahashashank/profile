@@ -236,12 +236,14 @@ function Home() {
                   Software Engineer Intern (Remote)
                 </div>
                 <p>
-                  Working in development team & developed web app with Back-end
-                  on Fire Base.
+                  Developing web app with Back-end on Supabase. Developed the
+                  back-end code for the application using NodeJS, ExpressJS and
+                  other JavaScript based technologies such as NestJs.
                 </p>
                 <p>
-                  Developing various part of app and used Material UI to make an
-                  interactive UI.
+                  I gained a great amount of experience in coding with Nest.Js
+                  and Material UI. Exposure to various design patterns was also
+                  a big advantage while working on projects.
                 </p>
               </div>
             </div>
@@ -304,6 +306,31 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className="card">
+          <div className="card-container heightchange">
+            <div className="card-left">
+              <div
+                data-aos="fade-right"
+                data-aos-offset="50"
+                className="animation-left "
+              >
+                JULY 2022 - CURRENT
+              </div>
+            </div>
+            <div className="card-right">
+              <div
+                data-aos="fade-left"
+                duration="600"
+                data-aos-offset="50"
+                className="animation-right"
+              >
+                <div className="card-heading">SARGAM</div>
+                <div className="card-sub-head">Member</div>
+                <p>Music club of our college.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <p className="heading">Education</p>
         <div className="card">
           <div className="card-container heightchange">
@@ -330,7 +357,7 @@ function Home() {
                 </div>
                 <p>
                   Currently in senior year of B.Tech program in IIIT Una with
-                  7.79 CGPA
+                  7.81 CGPA
                 </p>
               </div>
             </div>

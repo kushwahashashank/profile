@@ -17,7 +17,9 @@
   height: 70vh;
   z-index: -1;
 }
-
+/* .p {
+  text-align: justify;
+} */
 .home_main {
   /* margin-top: 2rem; */
   display: flex;
@@ -107,10 +109,12 @@
 .block {
   margin-top: 2.5rem;
   height: max-content;
-  width: 80vw;
+  width: 75vw;
   padding-bottom: 1.5rem;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .row {
   display: flex;
@@ -124,7 +128,7 @@
   width: 50%;
 }
 .card-body {
-  padding: 1.5rem 1rem 1rem 1.2rem;
+  padding: 1.5rem 1rem 1rem 2rem;
 }
 .title {
   font-size: 1.5rem;
@@ -132,11 +136,12 @@
   margin-bottom: 1.2rem;
 }
 .card-body p {
-  line-height: 20px;
   margin-top: 1.2rem;
   font-size: 16px;
   color: rgb(72, 71, 71);
   width: 95%;
+  text-align: justify;
+  line-height: 1.5;
 }
 .about_item {
   display: flex;
@@ -237,7 +242,7 @@
   margin-top: 8rem;
 }
 .skill_item {
-  padding: 0rem 1rem 1rem 1.2rem;
+  padding: 0rem 1rem 1rem 1.5rem;
   display: flex;
   width: 100%;
   margin-top: 1.5rem;
@@ -281,4 +286,8 @@
   .heading {
     font-size: 1.5rem;
   }
+}
+
+.card-right p {
+  text-align: justify;
 }
