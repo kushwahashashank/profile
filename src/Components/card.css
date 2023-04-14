@@ -5,7 +5,7 @@
 }
 .card-container {
   margin-top: 2.5rem;
-  height: 17rem;
+  height: 18rem;
   width: 80vw;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 .heightchange {
-  height: 11rem;
+  height: 11.5rem;
 }
 .card-left {
   display: flex;
@@ -97,5 +97,8 @@
 @media only screen and (max-width: 600px) {
   .card-left {
     height: 6rem;
+  }
+  .animation-right {
+    padding-left: 1rem;
   }
 }
