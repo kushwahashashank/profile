@@ -12,6 +12,7 @@ import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
 import { RiWhatsappFill } from "react-icons/ri";
 import emailjs from "emailjs-com";
+import Projects from "./Projects/Projects";
 function Home() {
   useEffect(() => {
     Aos.init({ duration: 600 });
@@ -39,7 +40,12 @@ function Home() {
       );
     e.target.reset();
   };
-
+  const handleClickScroll = () => {
+    const element = document.getElementById("contact_form");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <div className="home">
@@ -54,12 +60,8 @@ function Home() {
           <p id="name">Abhishek Kushwaha</p>
           <p>CSE STUDENT</p>
           <div className="links">
-            <a
-              className="btn btn-primary"
-              href="https://drive.google.com/drive/folders/1YmEGzMOoij7eBtYQQevrk3EWR4E5Lk-l?usp=share_link"
-              target="blank_"
-            >
-              Cover Letter
+            <a className="btn btn-primary" onClick={handleClickScroll}>
+              Let's Talk
             </a>
             <a
               className="btn btn-primary"
@@ -191,7 +193,7 @@ function Home() {
                 <p>TOOLS/TECHNOLOGIES :</p>
               </div>
               <div className="skill_dis">
-                Web Development, Firebase ,Git/Github, Linux, Android Studio
+                HTML, CSS, ReactJs, NodeJs, ExpressJs, Bootstrap, Mongoose
               </div>
             </div>
             <div className="skill_item">
@@ -199,7 +201,8 @@ function Home() {
                 <p>COURSEWORK :</p>
               </div>
               <div className="skill_dis">
-                Data Structures and Algorithms, Object Oriented Programming
+                Data Structures and Algorithms, Object Oriented Programming,
+                DBMS
               </div>
             </div>
             <div className="skill_item">
@@ -207,7 +210,7 @@ function Home() {
                 <p>PERSONAL :</p>
               </div>
               <div className="skill_dis">
-                Problem Solving, Leadership, Team Work
+                Problem Solving, Leadership, Team Work, Time Management
               </div>
             </div>
           </div>
@@ -221,7 +224,7 @@ function Home() {
                 data-aos-offset="50"
                 className="animation-left "
               >
-                JAUARY 2023 - CURRENT
+                JAUARY 2023 - MAY 2023
               </div>
             </div>
             <div className="card-right">
@@ -236,19 +239,21 @@ function Home() {
                   Software Engineer Intern (Remote)
                 </div>
                 <p>
-                  Developing web app with Back-end on Supabase. Developed the
-                  back-end code for the application using NodeJS, ExpressJS and
-                  other JavaScript based technologies such as NestJs.
+                  Developed web app with SQL database on Supabase. Created
+                  authentication UI and APIs for CRUD operation in the
+                  application using NodeJS and other JavaScript based
+                  technologies such as NestJs.
                 </p>
                 <p>
-                  I gained a great amount of experience in coding with Nest.Js
-                  and Material UI. Exposure to various design patterns was also
-                  a big advantage while working on projects.
+                  Gained a great amount of experience in coding with React.Js
+                  and Material UI and exposure to various design patterns was
+                  also a big advantage while working on projects.
                 </p>
               </div>
             </div>
           </div>
         </div>
+        {/* <Projects/> */}
         <p className="heading">Other Experiences & POR</p>
         <div className="card">
           <div className="card-container heightchange">
@@ -416,7 +421,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="contact">
+        <div id="contact_form" className="contact">
           <div
             className="contact-header-image"
             data-parallax="true"

@@ -63,7 +63,7 @@
   width: 90%;
   height: 2.2rem;
   margin: 0.5rem;
-  border-radius: 2rem;
+  border-radius: 5px;
   border: 1px solid grey;
   outline: none;
   padding-left: 1rem;
@@ -75,7 +75,7 @@
   width: 90%;
   height: 8rem;
   margin: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   border: 1px solid grey;
   outline: none;
   padding-left: 1rem;
