@@ -12,7 +12,7 @@
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
-  padding: 0rem 2rem 0rem 0rem;
+  /* padding: 0rem 2rem 0rem 0rem; */
 }
 .card-left {
   display: flex;
@@ -26,6 +26,7 @@
   width: 75%;
   padding: 0rem 0rem 2rem 0rem;
   /* background-color: goldenrod; */
+  padding-right: 2rem;
 }
 .animation-left {
   display: flex;
