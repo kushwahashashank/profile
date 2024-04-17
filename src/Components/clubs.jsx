@@ -25,8 +25,8 @@ const Clubs = () => {
               <div className="card-heading">EPMOC</div>
               <div className="card-sub-head">Student Coordinator</div>
               <p>
-                Event Managment club of our college. Organised many Inter
-                college and Intra college event.
+                Event Managment club of my college. Organised many Inter college
+                and Intra college event.
               </p>
             </div>
           </div>
@@ -53,7 +53,7 @@ const Clubs = () => {
               <div className="card-heading">ENUOIA</div>
               <div className="card-sub-head">Student Coordinator</div>
               <p>
-                Literary club of our college. Organised many Inter college and
+                Literary club of my college. Organised many Inter college and
                 Intra college events and competitions.
               </p>
             </div>
@@ -80,7 +80,7 @@ const Clubs = () => {
             >
               <div className="card-heading">SARGAM</div>
               <div className="card-sub-head">Member</div>
-              <p>Music club of our college.</p>
+              <p>Music club of my college.</p>
             </div>
           </div>
         </div>
