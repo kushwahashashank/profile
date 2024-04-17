@@ -2,18 +2,17 @@
   display: flex;
   justify-content: center;
   width: 100vw;
+  margin-top: 2rem;
 }
 .card-container {
+  display: flex;
   margin-top: 2.5rem;
-  height: 18rem;
-  width: 80vw;
+  height: var(card-right);
+  width: 78vw;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: flex;
   overflow: hidden;
-}
-.heightchange {
-  height: 11.5rem;
+  padding: 0rem 2rem 0rem 0rem;
 }
 .card-left {
   display: flex;
@@ -23,9 +22,10 @@
 }
 .card-right {
   display: flex;
-  height: 100%;
+  height: max-content;
   width: 75%;
-  padding-right: 2rem;
+  padding: 0rem 0rem 2rem 0rem;
+  /* background-color: goldenrod; */
 }
 .animation-left {
   display: flex;
@@ -50,7 +50,7 @@
   background-color: rgba(255, 255, 255, 0.7);
 }
 .animation-right p {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 16px;
   line-height: 1.5;
   color: rgb(72, 71, 71);

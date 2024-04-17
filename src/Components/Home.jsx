@@ -13,6 +13,9 @@ import { Tooltip } from "react-tooltip";
 import { RiWhatsappFill } from "react-icons/ri";
 import emailjs from "emailjs-com";
 import Projects from "./Projects/Projects";
+import Experience from "./Experience/experience";
+import Clubs from "./clubs";
+import Education from "./Education/education";
 function Home() {
   useEffect(() => {
     Aos.init({ duration: 600 });
@@ -84,7 +87,6 @@ function Home() {
             >
               <BsGithub className="btn-icon" />
             </a>
-
             <a
               id="linkedin"
               className="btn-round"
@@ -154,7 +156,7 @@ function Home() {
                   <div className="about_head">
                     <strong>AGE :</strong>
                   </div>
-                  <div className="about_dis">22</div>
+                  <div className="about_dis">23</div>
                 </div>
                 <div className="about_item">
                   <div className="about_head">
@@ -186,14 +188,18 @@ function Home() {
               <div className="skill_head">
                 <p>LANGUAGES/DATABASES :</p>
               </div>
-              <div className="skill_dis">C, C++, Javascript, SQL, MongoDB</div>
+              <div className="skill_dis">
+                C++, C, JavaScript, TypeScript, MySQL, MongoDB, Firebase,
+                Cassandra
+              </div>
             </div>
             <div className="skill_item">
               <div className="skill_head">
                 <p>TOOLS/TECHNOLOGIES :</p>
               </div>
               <div className="skill_dis">
-                HTML, CSS, ReactJs, NodeJs, ExpressJs, Bootstrap, Mongoose
+                HTML, CSS, ReactJs, NextJs, NodeJs, ExpressJs, Git, Docker,
+                Bootstrap
               </div>
             </div>
             <div className="skill_item">
@@ -210,217 +216,20 @@ function Home() {
                 <p>PERSONAL :</p>
               </div>
               <div className="skill_dis">
-                Problem Solving, Leadership, Team Work, Time Management
+                Analytical Thinking, Guidance, Collaboration, Efficient Resource
+                Allocation
               </div>
             </div>
           </div>
         </div>
+        <p className="heading">Projects</p>
+        <Projects />
         <p className="heading">Work Experience</p>
-        <div className="card">
-          <div className="card-container">
-            <div className="card-left">
-              <div
-                data-aos="fade-right"
-                data-aos-offset="50"
-                className="animation-left "
-              >
-                JAUARY 2023 - MAY 2023
-              </div>
-            </div>
-            <div className="card-right">
-              <div
-                data-aos="fade-left"
-                duration="600"
-                data-aos-offset="50"
-                className="animation-right"
-              >
-                <div className="card-heading">Ritswa Software Solution</div>
-                <div className="card-sub-head">
-                  Software Engineer Intern (Remote)
-                </div>
-                <p>
-                  Developed web app with SQL database on Supabase. Created
-                  authentication UI and APIs for CRUD operation in the
-                  application using NodeJS and other JavaScript based
-                  technologies such as NestJs.
-                </p>
-                <p>
-                  Gained a great amount of experience in coding with React.Js
-                  and Material UI and exposure to various design patterns was
-                  also a big advantage while working on projects.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <Projects/> */}
+        <Experience />
         <p className="heading">Other Experiences & POR</p>
-        <div className="card">
-          <div className="card-container heightchange">
-            <div className="card-left">
-              <div
-                data-aos="fade-right"
-                data-aos-offset="50"
-                className="animation-left "
-              >
-                FEBUARY 2021 - MARCH 2022
-              </div>
-            </div>
-            <div className="card-right">
-              <div
-                data-aos="fade-left"
-                duration="600"
-                data-aos-offset="50"
-                className="animation-right"
-              >
-                <div className="card-heading">EPMOC</div>
-                <div className="card-sub-head">Student Coordinator</div>
-                <p>
-                  Event Managment club of our college. Organised many Inter
-                  college and Intra college event.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-container heightchange">
-            <div className="card-left">
-              <div
-                data-aos="fade-right"
-                data-aos-offset="50"
-                className="animation-left "
-              >
-                FEBUARY 2021 - MARCH 2022
-              </div>
-            </div>
-            <div className="card-right">
-              <div
-                data-aos="fade-left"
-                duration="600"
-                data-aos-offset="50"
-                className="animation-right"
-              >
-                <div className="card-heading">ENUOIA</div>
-                <div className="card-sub-head">Student Coordinator</div>
-                <p>
-                  Literary club of our college. Organised many Inter college and
-                  Intra college events and competitions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-container heightchange">
-            <div className="card-left">
-              <div
-                data-aos="fade-right"
-                data-aos-offset="50"
-                className="animation-left "
-              >
-                JULY 2022 - CURRENT
-              </div>
-            </div>
-            <div className="card-right">
-              <div
-                data-aos="fade-left"
-                duration="600"
-                data-aos-offset="50"
-                className="animation-right"
-              >
-                <div className="card-heading">SARGAM</div>
-                <div className="card-sub-head">Member</div>
-                <p>Music club of our college.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Clubs />
         <p className="heading">Education</p>
-        <div className="card">
-          <div className="card-container heightchange">
-            <div className="card-left">
-              <div
-                data-aos="fade-right"
-                data-aos-offset="50"
-                className="animation-left "
-              >
-                <p>2020 - Ongoing</p>
-                <div className="degree">Bachelor's Degree</div>
-              </div>
-            </div>
-            <div className="card-right">
-              <div
-                data-aos="fade-left"
-                duration="600"
-                data-aos-offset="50"
-                className="animation-right"
-              >
-                <div className="card-heading">Bachelor of Technology (CSE)</div>
-                <div className="card-sub-head">
-                  INDIAN INSTITUTE OF INFORMATION TECHNOLOGY UNA
-                </div>
-                <p>
-                  Currently in senior year of B.Tech program in IIIT Una with
-                  7.81 CGPA
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-container heightchange">
-            <div className="card-left">
-              <div
-                data-aos="fade-right"
-                data-aos-offset="50"
-                className="animation-left"
-              >
-                <p>2019</p>
-                <div className="degree">Senior Secondary</div>
-              </div>
-            </div>
-            <div className="card-right">
-              <div
-                data-aos="fade-left"
-                duration="600"
-                data-aos-offset="50"
-                className="animation-right"
-              >
-                <div className="card-heading">10+2 with Physical Education</div>
-                <div className="card-sub-head">N.S.P.S SCHOOL</div>
-                <p>Passed Senior Secondary with 82.5%.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-container heightchange">
-            <div className="card-left">
-              <div
-                data-aos="fade-right"
-                data-aos-offset="50"
-                className="animation-left "
-              >
-                <p>2017</p>
-                <div className="degree">Senior High School</div>
-              </div>
-            </div>
-            <div className="card-right">
-              <div
-                data-aos="fade-left"
-                duration="600"
-                data-aos-offset="50"
-                className="animation-right"
-              >
-                <div className="card-heading">10th</div>
-                <div className="card-sub-head">N.S.P.S SCHOOL</div>
-                <p>Passed Senior High School with 87.68%.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <Education />
         <div id="contact_form" className="contact">
           <div
             className="contact-header-image"
