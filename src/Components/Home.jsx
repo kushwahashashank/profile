@@ -162,7 +162,7 @@ function Home() {
                   <div className="about_head">
                     <strong>EMAIL :</strong>
                   </div>
-                  <div className="about_dis">kushwahaabhi101@gmail.com</div>
+                  <div className="about_dis">iiitu20104@gmail.com</div>
                 </div>
                 <div className="about_item">
                   <div className="about_head">
